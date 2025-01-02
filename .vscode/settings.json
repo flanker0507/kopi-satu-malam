@@ -1,0 +1,9 @@
+{
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.singleQuote": true,
+  "liveServer.settings.mimeTypes": {
+    ".js": "application/javascript"
+  }
+}
