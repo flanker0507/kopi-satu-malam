@@ -19,19 +19,20 @@ document.querySelector('#search-button').onclick = (e) => {
 };
 
 // klik di luar sidebar untuk menghilang nav
-const hamburger = document.querySelector('#hamburger-menu');
+const hb = document.querySelector('#hamburger-menu');
 
 document.addEventListener('click', function (e) {
-  if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
+  if (!hb.contains(e.target) && !navbarNav.contains(e.target)) {
     navbarNav.classList.remove('active');
   }
 });
 
 // klik di luar sidebar untuk menghilang nav
-const search = document.querySelector('#search-button');
+const sb = document.querySelector('#search-button');
 
 document.addEventListener('click', function (e) {
-  if (!search.contains(e.target) && !search.contains(e.target)) {
+  if (!sb.contains(e.target) && !searchForm.contains(e.target)) {
     searchForm.classList.remove('active');
   }
 });
+hb;
