@@ -181,7 +181,7 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
-  mask-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
 }
 
 /* .hero::after {
@@ -197,6 +197,15 @@ body {
     rgba(255, 255, 255, 0) 50%
   );
 } */
+
+.hero .mask-container {
+  position: absolute;
+  inset: 0;
+  mask-image: url('../images/header-bg.svg');
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  mask-position: center;
+}
 
 .hero .content {
   padding: 1.4rem 7%;
@@ -274,6 +283,10 @@ body {
 
 .about .row .about-img img {
   width: 100%;
+  mask-image: url('../images/menu/splash.svg');
+  mask-size: 70%;
+  mask-repeat: no-repeat;
+  mask-position: center;
 }
 
 .about .row .content {
